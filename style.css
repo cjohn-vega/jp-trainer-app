@@ -9,8 +9,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
+  background-color: #272727;
+  padding: 15px 20px;
 }
 
 .logo {
@@ -37,7 +37,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #f0a500;
+  color: pink;
 }
 
 .hamburger {
@@ -53,6 +53,7 @@ body {
 }
 
 .audio-player {
+  color: #333;
   padding-top: 5px;
   display: flex;
   flex-direction: column;
@@ -63,5 +64,10 @@ body {
 .song-title {
   margin-top: 8px;
   color: #fff;
+  background-color: rgba(000, 000, 000, .7);
   text-decoration: none;
+}
+
+.song-title:hover {
+  color: pink;
 }

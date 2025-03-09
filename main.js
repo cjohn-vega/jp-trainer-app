@@ -98,6 +98,13 @@ let makeAudioPlayer = (musicArray) => {
   return audioContainer;
 };
 
+let setRandomBackground = (pictureArray) => {
+  let randomBG = getRandomItem(pictureArray);
+  document.body.style.backgroundImage = `url(${randomBG})`;
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundRepeat = "no-repeat";
+};
+
 let loadBody = (element) => {
   document.body.appendChild(element);
 };
@@ -111,7 +118,7 @@ let loadElementID = (element, idString) => {
 };
 
 let navLinks = [
-  { text: "Home", href: "#" },
+  { text: "Home", href: "/" },
   { text: "About", href: "#" },
   { text: "Services", href: "#" },
   { text: "Contact", href: "#" },
@@ -145,7 +152,13 @@ let music = [
   },
 ];
 
+let backgrounds = [
+  "assets/pictures/jinx-1-bg.jpg",
+  "assets/pictures/jinx-2-bg.jpg",
+];
+
 loadBody(makeNavBar("JP Trainer", navLinks));
+loadBody(makeContainerID("music"));
+loadElementID(makeAudioPlayer(music), "music");
 loadBody(makeContainerID("main"));
-loadElementID(makeAudioPlayer(music), "main");
-loadElementID(makeText("h1", "jp trainer", "title"), "main");
+setRandomBackground(backgrounds);
