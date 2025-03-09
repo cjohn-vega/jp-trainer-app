@@ -157,8 +157,17 @@ let backgrounds = [
   "assets/pictures/jinx-2-bg.jpg",
 ];
 
-loadBody(makeNavBar("JP Trainer", navLinks));
-loadBody(makeContainerID("music"));
-loadElementID(makeAudioPlayer(music), "music");
-loadBody(makeContainerID("main"));
 setRandomBackground(backgrounds);
+loadBody(makeNavBar("JP Trainer", navLinks)); //create navbar
+loadBody(makeContainerID("music"));
+loadElementID(makeAudioPlayer(music), "music"); //create music player
+loadBody(makeContainerID("main")); //set main view
+loadElementID(makeText("h1", "JP Trainer", "header-main"), "main");
+loadElementID(
+  makeText(
+    "p",
+    "JP Trainer is a free web software to learn Japanese. JP Trainer will always be free because you shouldn't have to pay to learn a language, especially one as popular as Japanese. If you support this kind of software and want to help me pay for ramen to eat, please consider donating using the link in the navigation bar on the top right of the screen 'Donate'. Currently available to learn are the Hiragana and Katakana writings systems. Vocabulary will come in the future with help from God. Thanks for visiting. In case, you care this is built in Vanilla JS. No React here folks. Fuck php. GG.",
+    "main-paragraph"
+  ),
+  "main"
+);

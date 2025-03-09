@@ -71,3 +71,30 @@ body {
 .song-title:hover {
   color: pink;
 }
+
+#main {
+  background-color: rgba(000, 000, 000, .8);
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+  height: 75vh;
+  border-radius: 10px;
+}
+
+.header-main {
+  color: #fff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  padding: 12px;
+}
+
+.main-paragraph {
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
