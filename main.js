@@ -123,6 +123,26 @@ let music = [
     song: "ILLENIUM - Sleepwalker ft. Joni Fatora",
     href: "https://www.youtube.com/watch?v=lhVykHuCpyo",
   },
+  {
+    directory: "assets/music/getjinxed.mp3",
+    song: "Get Jinxed (ft. Djerv) | Official Music Video - League of Legends",
+    href: "https://www.youtube.com/watch?v=0nlJuwO0GDs",
+  },
+  {
+    directory: "assets/music/gwimbly.mp3",
+    song: "Space Wizard - Gwimbly's Revenge",
+    href: "https://www.youtube.com/watch?v=vIZb7u_9WgE",
+  },
+  {
+    directory: "assets/music/2hands.mp3",
+    song: "Tate McRae - 2 hands (Official Video)",
+    href: "https://www.youtube.com/watch?v=cr4wnsLI_Xw",
+  },
+  {
+    directory: "assets/music/shakin.mp3",
+    song: "Eddie Money - Shakin'",
+    href: "https://www.youtube.com/watch?v=2tcD_dVcXE4",
+  },
 ];
 
 loadBody(makeNavBar("JP Trainer", navLinks));
